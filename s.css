@@ -1,0 +1,840 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+
+
+
+}
+body{
+    color: white;
+  background: linear-gradient(to bottom right, #1e1e2f, #121228);
+   
+    }
+
+
+.header{
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+   
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.logo{
+    position:relative;
+    font-size: 25px;
+    color: blueviolet;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+}
+
+
+.navbar li {
+  margin-left: 35px;
+}
+
+
+.navbar a{
+    display: inline-block;
+    font-size: 25px;
+    color: blueviolet;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+
+.navbar a:hover{
+    color:aqua;
+}
+
+
+
+
+.home{
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    background-position: center;        
+    align-items:center;
+    padding: 70px 10% 0;
+    margin: 0;         /* tar bort vit kant runt sidan */
+    }
+
+
+    .home-content{
+     max-width: 600px;
+   }
+
+
+    .home-content h3{
+        font-size: 32px;
+        font-weight: 700;
+        opacity: 0;
+        animation: slideBottom 1s ease forwards;
+        animation-delay: .7s;
+    }
+
+
+     .home-content h3:nth-of-type(2){
+        margin-bottom: 30px;
+        animation:slideTop 1s ease forwards;
+        animation-delay: 7s;
+     }
+     .home-content h3 span{
+        color: aqua;
+     }
+
+
+    .home-content h1{
+        font-size: 56px;
+        font-weight: 700;
+        margin: -3px 0;
+        opacity: 0;
+        animation: slideRight 1s ease forwards;
+        animation-delay: 1s;
+    }
+
+
+    .home-content p{
+        font-size: 20px;
+        opacity: 0;
+        animation: slideLeft 1s ease forwards;
+        animation-delay: 1s;
+       
+    }
+
+
+
+
+   .home-sci a{
+    display:inline-flex ;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease; ;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: .7s;
+    animation-delay: calc(.2s * var (--i));
+
+
+    margin: 30px 15px 30px 0;
+    }
+
+
+
+
+.home-sci a:hover{
+    background: aqua;
+    color: #000;
+    box-shadow: 0 0 20px aqua;
+}
+
+
+.btn-box{
+    display: inline-block;
+    padding: 12px 28px;
+    background: aqua;
+    border-radius: 40px;
+    color: #000;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-decoration: none;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px aqua,  
+    0 0 25px aqua;
+}
+
+
+.btn-box:hover{
+    background: #000;
+    color: aqua;
+    box-shadow: 0 0 20px aqua;
+}
+
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+.about-img img{
+     width: 250px; /* eller vilken storlek du vill */
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid aqua; /* valfri kant */
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3); /* snygg glow */
+  margin-left: 130px;
+}
+
+
+.about-text h2{
+    font-size: 60px;
+}
+
+
+.about-text h2 span{
+    color: aqua;
+}
+
+
+.about-text h4{
+    font-size: 29px;
+    font-weight: 600;
+    color: white;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+
+
+.about-text p{
+
+
+    color: white;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+
+#services{
+    background: linear-gradient(to right, #3f349b, #201b57, #24243e);
+    color: white;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+
+.sub-title{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+
+
+
+.sub-title span{
+    color: aqua;
+}
+.container{
+    padding: 90px;
+ 
+}
+
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px
+}
+
+
+.services-list div{
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    padding: 40px;
+    font-size: 13px;
+    border-radius: 20px;
+    font-weight: 13px;
+    border-right: 6px solid aqua;
+    text-align: center;
+    transition: all 0.5s ease;
+    box-shadow: 1px 1px 20px #012290f7,
+    1px 1px 40px #0053b8f7;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+
+
+
+
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+   
+}
+
+
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+
+.services-list div a{
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+
+.read{
+    display: inline-block;
+    padding: 12px 28px;
+    background: aqua;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #0f0c29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px aqua,  
+    0 0 25px aqua;
+}
+
+
+.read:hover{
+    background: #000;
+    color: aqua;
+    box-shadow: 0 0 20px aqua;
+}  
+
+
+
+
+.services-list div:hover {
+    transform: translateY(-10px);
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5), 0 0 30px rgb(23, 223, 223);
+}
+
+
+
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.container1{
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
+}
+
+
+.heading1{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+
+
+.bar{
+    font-size: 23px;
+}
+
+
+.Technical-bars .bar{
+    margin-top: 40px 0;
+}
+
+
+.Technical-bars .bar:first-child{
+    margin-top: 0;
+}
+.Technical-bars .bar:last-child{
+    margin-bottom: 0;
+}  
+
+
+.Technical-bars .bar .info{
+    margin-bottom: 5px;
+}
+
+
+.Technical-bars .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+}
+
+
+
+
+.Technical-bars .bar .progress-line{
+    position: relative;
+      padding-right: 10px;
+
+
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    animation: animate 1s cubic-bezier(1,0,0,5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+
+
+
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+
+.Technical-bars .bar .progress-line span {
+    height: 100%;
+    background-color: #0ef;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0,5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+
+
+
+
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.container1{
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
+}
+
+
+.heading1{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+
+
+.bar{
+    font-size: 23px;
+}
+
+
+.Technical-bars .bar{
+    margin-top: 40px 0;
+}
+
+
+.Technical-bars .bar:first-child{
+    margin-top: 0;
+}
+
+
+.Technical-bars .bar:last-child{
+    margin-bottom: 0;
+}
+
+
+.Technical-bars .bar .info{
+    margin-bottom: 5px;
+}
+
+
+.Technical-bars .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+
+.Technical-bars .bar .progress-line {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    animation: animate 1s cubic-bezier(1, 0, 0, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+
+
+
+
+
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+
+
+
+.Technical-bars .bar .progress-line span {
+    position: absolute;
+    height: 100%;
+    background-color: #0ef;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+
+
+
+
+
+
+
+.progress-line.html span {
+    width: 90%;
+}
+
+
+.progress-line.css span {
+    width: 60%;
+}
+
+
+.progress-line.js span {
+    width: 70%;
+}
+
+
+.progress-line.java span {
+    width: 85%;
+}
+
+
+.progress-line.react span {
+    width: 60%;
+}
+
+
+.progress-line.python span {
+    width: 10%;
+}
+
+
+
+
+
+
+.progress-line span::after {
+    content: attr(data-label);
+    position: absolute;
+    top: -30px;
+    left: 100%;
+    transform: translateX(-50%);
+    background: #000;
+    color: white;
+    font-size: 12px;
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-weight: 500;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+
+
+
+
+
+.progress-line span::after {
+    content: attr(data-label);
+    position: absolute;
+    top: -30px;
+    left: 100%;
+    transform: translateX(-50%);
+    background: #000;
+    color: white;
+    font-size: 12px;
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-weight: 500;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;  
+}
+
+
+
+
+
+
+.progress-line span::before{
+content: "";
+    position: absolute;
+    top: -12px;
+    left: 100%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: #000;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;  
+}
+
+
+@keyframes showText {
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.skills-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+
+
+
+
+
+.radial-bars svg {
+  width: 120px;
+  height: 120px;
+}
+
+
+
+
+.radial-bars{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+   
+}
+
+
+.radial-bars .radial-bar{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;  
+}
+
+
+.radial-bars .radial-bar .progress-bar{
+    stroke-width: 10;
+    stop-color: #000;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards;
+}
+
+
+
+
+@keyframes animate-bar {
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+
+
+.path{
+    stroke-width: 10;
+    stroke: #0ef;
+    fill: transparent;
+    stroke-dasharray:502 ;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+
+
+.path-1{animation: animate-path1 1s 1s linear forwards;}
+.path-2{animation: animate-path2 1s 1.5s linear forwards;}  
+.path-3{animation: animate-path3 1s 2s linear forwards;}
+.path-4{animation: animate-path4 1s 2.5s linear forwards;}
+
+
+
+
+
+
+
+
+
+
+@keyframes animate-path1 { /* 90% */
+  100% {
+    stroke-dashoffset: 50.2; /* 502 - (502 * 0.90) */
+  }
+}
+
+
+@keyframes animate-path2 { /* 85% */
+  100% {
+    stroke-dashoffset: 75.3; /* 502 - (502 * 0.85) */
+  }
+}
+
+
+@keyframes animate-path3 { /* 95% */
+  100% {
+    stroke-dashoffset: 25.1; /* 502 - (502 * 0.95) */
+  }
+}
+@keyframes animate-path4 { /* 100% */
+  100% {
+    stroke-dashoffset: 0; /* 502 - (502 * 1.00) = 0 */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.radial-bar .perscentage{
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 500;
+     animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+
+
+
+.radial-bar .text{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+
+
+}
+
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
