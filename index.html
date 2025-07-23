@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
   <title>Mohamed Alsaghir</title>
@@ -17,26 +16,40 @@
 
 <body>
 
-  <header>
-    <a href="#" class="logo">Mohamed</a>
+ <!-- Detta är din toppsektion -->
+<section id="home">
 
-    <nav class="navigation">
-      <a href="#about">About Me</a> <!-- NY KNAPP -->
-      <a href="#skills">Skills</a>
-      <a href="#services">Services</a>
-      <a href="#project">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+</section>
+
+<!-- Header -->
+<header class="mobile-header">
+  <a href="#home" class="logo">Mohamed</a>
+
+  <div class="hamburger" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav class="navigation" id="navigation">
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#services">Services</a>
+    <a href="#project">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+
 
 
 
   <section class="home">
     <div class="home-content">
       <h1>Welcome to My Portfolio</h1>
-      <h3>Mohamed Alsaghir, <span class="text"></span></h3>
       <p>
-          I’m a system developer driven by curiosity and creativity. Through my studies at Malmö University, I’ve gained practical skills in programming, data handling, and building scalable software.</p>
+        I’m a system developer driven by curiosity and creativity. Through my studies at Malmö University, I’ve gained practical skills in programming, data handling, and building scalable software.
+        I learned to solve problems, collaborate, and keep learning.</p>
 
       <div class="home-sci">
         <a href="https://www.facebook.com/mhamad.alsager.35/" target="_blank">
@@ -60,26 +73,27 @@
 
 
   <section class="about" id="about">
+  <div class="about-content">
     <div class="about-img">
       <img src="images/My_Image .jpeg" alt="About Me" class="about-img">
     </div>
     <div class="about-text">
       <h2 class="about-title">About <span>Me</span></h2>
-      <h4>System Developer | B.Sc. in Computer Science, Malmö University
-</h4>
+      <h4>System Developer | B.Sc. in Computer Science, Malmö University</h4>
       <p>
-        I'm a newly graduated system developer with a bachelor's degree in Computer Science, specializing in systems development. 
-        During my studies at Malmö University, I built a strong foundation in object-oriented programming, databases, software architecture, and information security.
-        I enjoy solving real-world problems through smart, user-focused solutions. I'm passionate about both front-end and back-end development, and I’ve worked with languages such as Java, JavaScript, HTML/CSS, C#, and SQL.
-        Through my role as a teaching assistant, I developed strong communication and problem-solving skills, helping other students understand programming logic and code structure.
-        I'm always eager to learn new technologies, improve my skills, and be part of meaningful projects that create value.
+        I recently graduated with a Bachelor of Science in Computer Science, with a focus on Systems Development.
+During my time at Malmö University, I developed not only technical skills but also the ability to think critically, test ideas, learn from failure, and adapt.
+I am passionate about solving real-world problems and enjoy working with both front-end and back-end development.
+I have experience with languages such as Java, JavaScript, HTML/CSS, C#, and SQL, and I feel most motivated when building something based on an idea I truly care about.
+I am always eager to explore new technologies, grow as a developer, and contribute to meaningful projects.
       </p>
+    </div>
     </div>
   </section>
 
   <section class="cards" id="skills">
     <h2 class="section-title centered-title">
-      <span class="white-text">My</span><span class="accent-text">Skills</span>
+      <span class="white-text">My </span><span class="accent-text">Skills</span>
     </h2>
 
 
@@ -394,15 +408,11 @@ Built with Spring Boot, HTML, CSS (Bootstrap), and jQuery, it integrates APIs li
       <p>📧 mohamed.alsaghir00@gmail.com</p>
     </div>
 
-    <div class="footer-socials">
-      <a href="https://github.com/Mohamed-Alsaghir" target="_blank"><i class="fa-brands fa-github"></i></a>
-      <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-    </div>
 
     <p class="footer-copy">© 2025 Mohamed Alsaghir</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="app.js"></script>
 </body>
 
