@@ -160,6 +160,7 @@ header {
   box-shadow: 0 0 20px aqua;
 }
 
+#home 
 #about,
 #skills,
 #services,
@@ -804,9 +805,6 @@ textarea {
   color: #888;
   margin-top: 20px;
 }
-
-
-
 
 
 
