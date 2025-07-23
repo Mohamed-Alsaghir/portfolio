@@ -1162,3 +1162,22 @@ body {
 }
 
 
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 20px;
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 50px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #skills {
+    padding: 60px 20px;
+  }
+}
