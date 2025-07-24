@@ -217,7 +217,7 @@ header {
 .about {
  grid-template-columns: repeat(2, 1fr);
   background: linear-gradient(to right, #130c50, #1f1d2e, #252571); 
-  padding: 245px 250px;
+  padding: 100px 250px;
   color: white;
   display: flex;
   justify-content: center;
@@ -328,7 +328,7 @@ header {
 #skills {
   background: linear-gradient(to right, #1e1e2f, #121228);
   color: white;
-  padding: 100px 150px;
+  padding: 10px 150px;
 }
 
 #skills .section-title {
@@ -346,6 +346,7 @@ header {
 }
 
 .skill {
+
   margin-bottom: 20px;
 }
 
