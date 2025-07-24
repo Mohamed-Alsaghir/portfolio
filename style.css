@@ -1181,3 +1181,9 @@ body {
     padding: 60px 20px;
   }
 }
+
+@media (max-width: 768px) {
+  .projects .content {
+    grid-template-columns: 1fr;
+  }
+}
