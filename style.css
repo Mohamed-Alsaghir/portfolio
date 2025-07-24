@@ -623,6 +623,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  grid-template-columns: repeat(3, 1fr); /* exakt 3 kolumner */
   gap: 30px;
 }
 
@@ -950,7 +951,7 @@ body {
 
 
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
   .projects .content {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
