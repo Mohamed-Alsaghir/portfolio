@@ -1193,3 +1193,31 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+
+@media screen and (max-width: 1024px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-img {
+    justify-self: center;
+    margin-bottom: 20px;
+  }
+
+  .about-img img {
+    margin: 0 auto;
+  }
+
+  .about-text {
+    margin: 0;
+    justify-self: center;
+  }
+
+  .about-text h2,
+  .about-text h4,
+  .about-text p {
+    text-align: center;
+  }
+}
